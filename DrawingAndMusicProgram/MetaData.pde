@@ -38,26 +38,3 @@ void MetaDataMousePressed() {
   println("disc:", songMetaData[currentSong].disc() );
 } 
 } 
-/*
-void MetaDataDraw() { 
-   int yi = 15;
-  int ys = 25, y = ys; //Two Variables
-  text("File Name: " + songMetaData[currentSong].fileName(), 5, y);
-  text("Length (in milliseconds): " + songMetaData[currentSong].length(), 5, y+=yi);
-  text("Title: " + songMetaData[currentSong].title(), 5, y+=yi);
-  text("Author: " + songMetaData[currentSong].author(), 5, y+=yi); 
-  text("Album: " + songMetaData[currentSong].album(), 5, y+=yi);
-  text("Date: " + songMetaData[currentSong].date(), 5, y+=yi);
-  text("Comment: " + songMetaData[currentSong].comment(), 5, y+=yi);
-  text("Lyrics: " + songMetaData[currentSong].lyrics(), 5, y+=yi ); 
-  text("Track: " + songMetaData[currentSong].track(), 5, y+=yi);
-  text("Genre: " + songMetaData[currentSong].genre(), 5, y+=yi);
-  text("Copyright: " + songMetaData[currentSong].copyright(), 5, y+=yi);
-  text("Disc: " + songMetaData[currentSong].disc(), 5, y+=yi);
-  text("Composer: " + songMetaData[currentSong].composer(), 5, y+=yi);
-  text("Orchestra: " + songMetaData[currentSong].orchestra(), 5, y+=yi);
-  text("Publisher: " + songMetaData[currentSong].publisher(), 5, y+=yi);
-  text("Encoded: " + songMetaData[currentSong].encoded(), 5, y+=yi);
-  
-} 
-*/
