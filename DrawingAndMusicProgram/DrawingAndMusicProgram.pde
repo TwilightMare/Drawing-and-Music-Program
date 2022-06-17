@@ -13,7 +13,7 @@ SoundFile file;
 float SoundX, SoundY, SoundWidth, SoundHeight; 
 //
 Minim minim; 
-int numberOfSongs = 5; //Will Change depending on how many songs you include 
+int numberOfSongs = 6; //Will Change depending on how many songs you include 
 AudioPlayer[] song = new AudioPlayer[numberOfSongs]; 
 AudioMetaData[] songMetaData = new AudioMetaData[numberOfSongs];
 int currentSong = numberOfSongs - numberOfSongs;
@@ -207,6 +207,7 @@ void setup() {
   song[currentSong+=1] = minim.loadFile("MusicMedia/Come Little Children (Instrumental).mp3");
   song[currentSong+=1] = minim.loadFile("MusicMedia/Playdate (Melanie Martinez) but it's on violin - TIKTOK VIOLIN - Joel Sunny.mp3");
   song[currentSong+=1] = minim.loadFile("MusicMedia/Love Nwantiti Violin.mp3");
+  song[currentSong+=1] = minim.loadFile("MusicMedia/Ruth B Dandelions Piano.mp3");
   currentSong-=currentSong;
   for ( int i=currentSong; i<song.length; i++ ) {
   songMetaData[i] = song[i].getMetaData(); //reads song meta 1, like song 1, mimicing array notation
